@@ -34,8 +34,10 @@ body  {
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 1rem;
-
-
+}
+.shop:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 .shop a {
     color: black;
@@ -47,12 +49,10 @@ body  {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 .dropdown-content {
@@ -82,25 +82,329 @@ body  {
 .dropdown-content a {
     text-decoration: none;
     color: white;
-
 }
 
 .dropdown-content ul li a:hover {
     text-decoration: underline;
+}
 
+.container {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+.top-text {
+    position: absolute;
+    top: 70px;
+    left: 32px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.middle-text {
+    position: absolute;
+    top: 115px;
+    left: 32px;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: left;
+    max-width: 360px;
+}
+
+.button {
+    position: absolute;
+    top: 230px;
+    left: 32px;
+    width: 184px;
+    height: 45px;
+    background-color: #FF6b6b;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000000;
+}
+
+.info {
+    background: linear-gradient(0.25turn, #975fa5, #794185, #4c1958);
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem 2rem 2rem 2rem;
+    height: 240px;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.daily {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.daily-desktop {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    display: none;
+    flex-direction: column;
+}
+.daily-admission {
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: none;
+}
+.daily-admission:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+
+.more {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+}
+.more a {
+    text-decoration: none;
+    color: black;
+}
+.more a:hover {
+    text-decoration: underline;
+}
+.event-1{
+    text-align: center;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.event-1-desktop{
+    text-align: center;
+    margin-top: 2.5rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-card {
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+    background-color: rgba(245, 245, 245, 0.63);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 360px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.content-card:hover {
+    background-color: #d7d7d7;
+    transition: all 0.3s ease-in-out;
+}
+
+
+h3 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+}
+
+.content-card button {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    overflow: hidden;
+}
+
+.event-info {
+    font-weight: normal;
+    margin-top: 1rem;
+}
+
+.event-1 button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.event-1-desktop button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content-info {
+    color: #464646;
+}
+
+.event-desktop {
+    display: none;
+}
+.event-info {
+    display: none;
+}
+
+.button-admission {
+    margin-top: 1rem;
+    width: 184px;
+    height: 45px;
+    background-color: #FF6b6b;
+    border: none;
+    font-weight: bold;
+}
+
+.button-admission:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+footer i {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+
+footer ul {
+    margin-top: 48px;
+    gap: 3rem;
+    display: flex;
+    list-style-type: none;
+    padding:0;
+    font-size: 0.75rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-nav ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-follow {
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: rgba(255,255,255, 0.6)
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(255,255,255, 0.6);
+}
+
+.back {
+    top: 1rem;
+
+    position: absolute;
+}
+
+.icon-fb {
+    color: #3B5998;
+}
+
+.icon-tw {
+    color: #1DA1F2;
+}
+
+.icon-ig {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-icons-desktop {
+    display: none;
+}
+.bg-desktop {
+    display: none;
 }
 
 /* Small (sm) */
-@media (min-width: 640px) {
 
-}
+
 /* Medium (md) */
 @media (min-width: 768px) {
+    .info {
+        height: 290px;
+        font-size: 2rem;
+    }
+    .more {
+        font-size: 1.5rem;
+    }
+    .header {
+        padding: 0 3rem 0 3rem;
+    }
+    .top-text {
+        font-size: 2rem;
+        left: 3rem;
+    }
+
+    .middle-text {
+        left: 3rem;
+        font-size: 1.5rem;
+    }
+    .button {
+        top: 280px;
+        left: 3rem;
+        width: 204px;
+        height: 55px;
+
+    }
 
     /* Your styles for the medium breakpoint here */
 }
 /* Large (lg) */
 @media (min-width: 1024px) {
+
     .shop {
         margin-right: 1rem;
         padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -110,12 +414,41 @@ body  {
     }
     .header {
         height: 6rem;
+        padding: 0 4rem 0 4rem;
+    }
+    .top-text {
+        font-size: 2.25rem;
+        left: 4rem;
+    }
+
+    .middle-text {
+        font-size: 1.75rem;
+        left: 4rem;
+    }
+    .button {
+        font-size: 1.5rem;
+        height: 65px;
+        width: 204px;
+        left: 4rem;
     }
 
     /* Your styles for the large breakpoint here */
 }
 /* Extra Large (xl) */
 @media (min-width: 1280px) {
+    .info {
+        padding: 2rem 2rem 2rem 5rem;
+        flex-direction: column;
+        height: 310px;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    .more {
+        font-size: 1.5rem;
+    }
+    .header {
+        padding: 0 5rem 0 5rem;
+    }
     .shop {
         margin-right: 1rem;
         padding: 0.5rem 1.5rem 0.5rem 1.5rem;
@@ -135,6 +468,72 @@ body  {
     .dropdown-content li {
         border-top: 0;
     }
+
+    .bg-mobile {
+        display: none;
+    }
+    .bg-desktop {
+        display: block;
+    }
+
+    .top-text {
+        font-size: 3rem;
+        left: 5rem;
+        letter-spacing: 5px;
+    }
+
+    .middle-text {
+        top: 179px;
+        max-width: 600px;
+        font-size: 2rem;
+        left: 5rem;
+    }
+    .button {
+        top: 340px;
+        left: 5rem;
+    }
+    .daily-desktop {
+        display: flex;
+    }
+    .activities {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .event-mobile {
+        display: none;
+    }
+    .event-desktop {
+        display: block;
+    }
+    .content-card {
+        min-width: 540px;
+        min-height: 160px;
+        font-size: 1.25rem;
+    }
+    .event-info {
+        font-size: 1rem;
+        display: block;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .event-1 button {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .event-1-desktop button {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+    .event-1-desktop{
+        display: flex;
+    }
+
+    .activities {
+        justify-content: space-evenly;
+    }
+
+
 
     /* Your styles for the extra large breakpoint here */
 }
