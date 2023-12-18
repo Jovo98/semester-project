@@ -158,15 +158,12 @@ body  {
     justify-content: flex-start;
 }
 .daily {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
 }
 .daily-desktop {
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     display: none;
     flex-direction: column;
     max-width: 800px;
@@ -180,10 +177,6 @@ body  {
 .daily-admission:hover {
     cursor:pointer;
     text-decoration: underline;
-}
-
-h1 {
-    margin: 0;
 }
 
 .more {
@@ -247,6 +240,10 @@ h1 {
     background-color: #d7d7d7;
     transition: all 0.3s ease-in-out;
 }
+h1 {
+    margin:0;
+}
+
 h2 {
     font-size: 1.5rem;
 }
@@ -310,14 +307,6 @@ h4 {
     color: #000000;
 }
 
-
-
-
-
-
-
-
-
 footer i {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -342,11 +331,6 @@ footer ul {
     color: #ffffff;
     text-transform: uppercase;
 }
-
-
-
-
-
 .footer-icons{
     display: flex;
     flex-direction: row;
@@ -365,12 +349,10 @@ footer ul {
     text-decoration: underline;
     color: rgb(122, 122, 122);
 }
-
 .footer-underline:hover {
     cursor:pointer;
     text-decoration: none;
 }
-
 .footer-copyright {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
@@ -379,7 +361,6 @@ footer ul {
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
 }
-
 .footer-info {
     padding: 2rem 2rem 2rem 2rem;
 }
@@ -481,6 +462,76 @@ a {
     flex-direction: row-reverse;
 }
 
+.event-calendar {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.event-calendar p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.4px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.bar {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 4.5rem 1rem 4.5rem;
+    color: white;
+    background-color: black;
+}
+.arrow-left {
+    background-color: #975fa5;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.arrow-right {
+    background-color: #975fa5;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.choose-month {
+    text-align: center;
+}
+
+.calendar-month {
+    padding-top: 4rem;
+    margin-left: 2rem;
+}
+.date {
+    color:white;
+    background-color: gray;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-weight: bold;
+}
+.book {
+    color: white;
+    background-color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.book:hover {
+    cursor:pointer;
+}
+.activities {
+    text-align: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+.booking {
+    display:flex;
+    flex-direction: column;
+}
+
 /* Small (sm) */
 
 
@@ -537,6 +588,23 @@ a {
         top: 30rem;
         font-size: 2.5rem;
     }
+    .date {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .book {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .event-calendar {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .calendar-month {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
 
     /* Your styles for the medium breakpoint here */
 }
@@ -601,6 +669,23 @@ a {
     .admission-info p {
         font-size: 1.25rem;
     }
+    .date {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .book {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .event-calendar {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .calendar-month {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
 
     /* Your styles for the large breakpoint here */
 }
@@ -692,6 +777,12 @@ a {
         font-size: 1rem;
         display: block;
     }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .event-calendar p {
+        font-size: 1.25rem;
+    }
     h3 {
         font-size: 2rem;
     }
@@ -744,6 +835,22 @@ a {
     }
     .admission-info-desktop {
         margin: 3rem 10rem 3rem 10rem;
+    }
+    .date {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .book {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .event-calendar {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .calendar-month {
+        margin-left: 10rem;
+        margin-right: 10rem;
     }
 
 
