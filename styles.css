@@ -724,10 +724,12 @@ input[type=text] {
         margin-left: 4rem;
         margin-right: 4rem;
     }
+
     .newsletter-title {
         padding-left: 4rem;
         padding-right: 4rem;
     }
+
     .newsletter-container {
         padding: 4rem;
     }
@@ -859,6 +861,7 @@ input[type=text] {
         flex-direction: row;
         justify-content: flex-start;
     }
+
     .checklist div {
         padding: 2rem;
     }
@@ -1060,6 +1063,7 @@ input[type=text] {
         margin-left: 10rem;
         margin-right: 10rem;
     }
+
     .closed {
         margin-left: 10rem;
         margin-right: 10rem;
@@ -1069,6 +1073,7 @@ input[type=text] {
         margin-left: 10rem;
         margin-right: 10rem;
     }
+
     .calendar-month {
         margin-left: 10rem;
         margin-right: 10rem;
