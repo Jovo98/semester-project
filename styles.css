@@ -29,6 +29,10 @@ body  {
     color: white;
 }
 
+.logo {
+    font-size: 1.5rem;
+}
+
 .shop {
     padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: white;
@@ -269,6 +273,11 @@ h4 {
     font-size: 1.5rem;
 }
 
+h5 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
 .content-card button {
     background-color: black;
     color: white;
@@ -491,8 +500,7 @@ a {
 }
 
 .event-calendar {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
 }
 
 .event-calendar p {
@@ -554,8 +562,19 @@ a {
     margin-bottom: 1rem;
 }
 
+.closed {
+    color: #565656;
+    background-color: #d7d7d7;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 1rem 1rem 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .book:hover {
     cursor:pointer;
+    text-decoration: underline;
 }
 
 .activities {
@@ -569,6 +588,54 @@ a {
     flex-direction: column;
 }
 
+.newsletter-title {
+    background: linear-gradient(0.25turn, #975fa5, #794185, #4c1958);
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.newsletter-title h1 {
+    font-size: 1rem;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid black;
+    background: #f1f1f1;
+}
+
+.newsletter-container {
+    padding: 2rem;
+}
+
+.checklist {
+    background-color: #eeeeee;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.checklist input {
+    margin: 0.5rem;
+}
+
+.register {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    padding: 16px 20px;
+    margin: 2rem 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.options {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 /* Small (sm) */
 
 
@@ -643,6 +710,11 @@ a {
         margin-right: 4rem;
     }
 
+    .closed {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
     .event-calendar {
         margin-left: 4rem;
         margin-right: 4rem;
@@ -651,6 +723,23 @@ a {
     .calendar-month {
         margin-left: 4rem;
         margin-right: 4rem;
+    }
+    .newsletter-title {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .newsletter-container {
+        padding: 4rem;
+    }
+
+    .checklist {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .options {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 /* Large (lg) */
@@ -735,6 +824,11 @@ a {
         margin-right: 5rem;
     }
 
+    .closed {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
     .event-calendar {
         margin-left: 5rem;
         margin-right: 5rem;
@@ -743,6 +837,39 @@ a {
     .calendar-month {
         margin-left: 5rem;
         margin-right: 5rem;
+    }
+
+    .newsletter-title {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .newsletter-title h1 {
+        font-size: 1.25rem;
+    }
+
+    .newsletter-container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .checklist {
+        padding-left: 5rem;
+        padding-right: 5rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .checklist div {
+        padding: 2rem;
+    }
+
+    .options {
+         padding-left: 5rem;
+         padding-right: 5rem;
+     }
+
+    .logo {
+        font-size: 2rem;
     }
     /* Your styles for the large breakpoint here */
 }
@@ -864,11 +991,11 @@ a {
     }
 
     .event-1 button {
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     }
 
     .event-1-desktop button {
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     }
 
     .event-1-desktop{
@@ -933,6 +1060,10 @@ a {
         margin-left: 10rem;
         margin-right: 10rem;
     }
+    .closed {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
 
     .event-calendar {
         margin-left: 10rem;
@@ -941,6 +1072,30 @@ a {
     .calendar-month {
         margin-left: 10rem;
         margin-right: 10rem;
+    }
+
+    .newsletter-title {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .newsletter-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .newsletter-container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .checklist {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .options {
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
     /* Your styles for the extra large breakpoint here */
 }
@@ -955,11 +1110,11 @@ a {
     }
 
     .top-text-admission {
-        top: 26rem;
+        top: 30rem;
     }
 
     .middle-text-admission {
-        top: 33rem;
+        top: 36rem;
     }
     /* Your styles for the 2XL breakpoint here */
 }
