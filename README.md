@@ -29,20 +29,7 @@ The site allows you to make appointments and book tickets for certain events and
 git clone https://github.com/Jovo98/semester-project.git
 ```
 
-2. Install the dependencies:
 
-```
-npm install
-```
-
-### Running
-
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
 
 ## Contributing
 
